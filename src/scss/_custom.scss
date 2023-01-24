@@ -1,0 +1,93 @@
+// Here you can add other styles
+.sidebar, .sidebar-brand, .header.header-sticky{
+ background-color: #F6F5F5; 
+ text-align: center;
+}
+
+.header.header-sticky{
+  box-shadow: 0 3px 2px -2px rgb(0 0 0 / 20%);
+
+}
+
+.sidebar-nav .nav-link.active,  .sidebar-nav .nav-link.active .nav-icon{
+  color: #E89028;
+}
+
+.sidebar-brand{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar-nav {
+  box-shadow:6px -2px 2px -4px rgb(0 0 0 / 20%)
+}
+
+.sidebar-nav .nav-link {
+  font-size: 12px;
+  font-weight: bold;
+  svg{
+    height: 12px;
+    padding-left: 14px;
+  }
+}
+
+.simplebar-content {
+  margin-top: 16px;
+  flex-flow: column;
+  height: 155px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.25));
+
+  li {
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  
+  svg{
+    width: 48px;
+    height: 48px;
+  }
+
+  a{
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+}
+
+.simplebar-content-wrapper{
+  text-align: center !important;
+}
+
+.bg-primary {
+  background-color: #E89028 !important;
+}
+
+.btn-check:checked + .btn, :not(.btn-check) + .btn:active, .btn:first-child:active, .btn.active, .btn.show{
+  background-color: #fff !important;
+  border: 1px solid #E89028;
+  border-radius: 5px;
+  color: #E89028 !important;
+}
+
+.btn-primary{
+  background-color: #E89028 !important;
+  color: #fff !important;
+  border: none !important;
+}
+
+.btn-primary:hover{
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+.icon:not(.icon-c-s):not(.icon-custom-size){
+  width: 2rem;
+  height: 2rem;
+  border-radius: 5px;
+  padding-left: 2px !important;
+}
