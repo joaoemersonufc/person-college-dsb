@@ -56,7 +56,9 @@ const Register = () => {
                     />
                   </CInputGroup>
                   <div className="d-grid">
-                    <CButton color="primary">Create Account</CButton>
+                    <CButton color="primary" href="#/login">
+                      Create Account
+                    </CButton>
                   </div>
                 </CForm>
               </CCardBody>
