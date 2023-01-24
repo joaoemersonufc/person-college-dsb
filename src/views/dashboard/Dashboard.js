@@ -20,10 +20,10 @@ const Dashboard = () => {
   const random = (min, max) => Math.floor(Math.random() * (max - min + 1) + min)
 
   const progressExample = [
-    { title: 'Visits', value: '29.703 Users', percent: 40, color: 'success' },
-    { title: 'Unique', value: '24.093 Users', percent: 20, color: 'info' },
-    { title: 'Pageviews', value: '78.706 Views', percent: 60, color: 'warning' },
-    { title: 'New Users', value: '22.123 Users', percent: 80, color: 'danger' },
+    { title: 'Visits', value: '29.703 Users', percent: 40, color: 'primary' },
+    { title: 'Unique', value: '24.093 Users', percent: 20, color: 'dark' },
+    { title: 'Pageviews', value: '78.706 Views', percent: 60, color: 'primary' },
+    { title: 'New Users', value: '22.123 Users', percent: 80, color: 'dark' },
     { title: 'Bounce Rate', value: 'Average Rate', percent: 40.15, color: 'primary' },
   ]
   return (
@@ -37,9 +37,9 @@ const Dashboard = () => {
               datasets: [
                 {
                   label: 'My First dataset',
-                  backgroundColor: hexToRgba(getStyle('--cui-info'), 10),
-                  borderColor: getStyle('--cui-info'),
-                  pointHoverBackgroundColor: getStyle('--cui-info'),
+                  backgroundColor: hexToRgba(getStyle('--cui-dark'), 10),
+                  borderColor: getStyle('--cui-dark'),
+                  pointHoverBackgroundColor: getStyle('--cui-dark'),
                   borderWidth: 2,
                   data: [
                     random(50, 200),
@@ -55,8 +55,8 @@ const Dashboard = () => {
                 {
                   label: 'My Second dataset',
                   backgroundColor: 'transparent',
-                  borderColor: getStyle('--cui-success'),
-                  pointHoverBackgroundColor: getStyle('--cui-success'),
+                  borderColor: getStyle('--cui-orange'),
+                  pointHoverBackgroundColor: getStyle('--cui-orange'),
                   borderWidth: 2,
                   data: [
                     random(50, 200),

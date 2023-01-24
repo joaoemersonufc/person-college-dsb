@@ -1,17 +1,17 @@
-import React from 'react'
+/* eslint-disable react/react-in-jsx-scope */
+import { cilArrowBottom, cilArrowTop, cilOptions } from '@coreui/icons'
+import CIcon from '@coreui/icons-react'
 import {
-  CRow,
   CCol,
   CDropdown,
-  CDropdownMenu,
   CDropdownItem,
+  CDropdownMenu,
   CDropdownToggle,
+  CRow,
   CWidgetStatsA,
 } from '@coreui/react'
-import { getStyle } from '@coreui/utils'
 import { CChartBar, CChartLine } from '@coreui/react-chartjs'
-import CIcon from '@coreui/icons-react'
-import { cilArrowBottom, cilArrowTop, cilOptions } from '@coreui/icons'
+import { getStyle } from '@coreui/utils'
 
 const WidgetsDropdown = () => {
   return (
@@ -106,7 +106,7 @@ const WidgetsDropdown = () => {
       <CCol sm={6} lg={3}>
         <CWidgetStatsA
           className="mb-4"
-          color="info"
+          color="dark"
           value={
             <>
               $6.200{' '}
@@ -192,7 +192,7 @@ const WidgetsDropdown = () => {
       <CCol sm={6} lg={3}>
         <CWidgetStatsA
           className="mb-4"
-          color="warning"
+          color="primary"
           value={
             <>
               2.49{' '}
@@ -265,7 +265,7 @@ const WidgetsDropdown = () => {
       <CCol sm={6} lg={3}>
         <CWidgetStatsA
           className="mb-4"
-          color="danger"
+          color="dark"
           value={
             <>
               44K{' '}
