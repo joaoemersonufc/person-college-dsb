@@ -8,11 +8,19 @@
   box-shadow: 0 3px 2px -2px rgb(0 0 0 / 20%);
 
 }
-
+.nav-link{
+  width: 106px;
+}
+.nav-item{
+  margin-top: 10px;
+}
 .sidebar-nav .nav-link.active,  .sidebar-nav .nav-link.active .nav-icon{
   color: #E89028;
+  width: auto !important;
 }
-
+.sidebar-nav .nav-link,  .sidebar-nav .nav-link .nav-icon{
+  color: #E89028; 
+}
 .sidebar-brand{
   display: flex;
   justify-content: center;
@@ -35,7 +43,7 @@
 .simplebar-content {
   margin-top: 16px;
   flex-flow: column;
-  height: 155px;
+  height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
