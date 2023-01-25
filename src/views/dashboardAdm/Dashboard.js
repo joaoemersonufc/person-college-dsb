@@ -10,9 +10,10 @@ const DashboardAdm = () => {
       <CCard className="mb-4">
         <CCardBody>
           <div
+            className="body-linear"
             style={{
               display: 'flex',
-              flexFlow: 'row',
+              flexFlow: 'row wrap',
               width: '100%',
               height: '100%',
               alignItems: 'center',

@@ -117,3 +117,9 @@
 .sidebar-nav .nav-icon{
   flex: auto;
 }
+
+@media screen and (max-width: 800px){
+  .body-linear{
+    flex-flow: column !important;
+  }
+}
