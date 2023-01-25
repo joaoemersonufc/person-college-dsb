@@ -60,7 +60,7 @@ const Login = () => {
                         <CButton color="link" className="px-0">
                           Forgot password?
                         </CButton>
-                        <Link to="/dashboardAdm?guest">
+                        <Link to="/dashboard?guest">
                           <CButton
                             color="link"
                             className="px-0"
