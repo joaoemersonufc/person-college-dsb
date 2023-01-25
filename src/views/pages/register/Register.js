@@ -13,6 +13,7 @@ import {
   CInputGroupText,
   CRow,
 } from '@coreui/react'
+import { Link } from 'react-router-dom'
 
 const Register = () => {
   return (
@@ -56,9 +57,9 @@ const Register = () => {
                     />
                   </CInputGroup>
                   <div className="d-grid">
-                    <CButton color="primary" href="#/login">
-                      Create Account
-                    </CButton>
+                    <Link to="/login">
+                      <CButton color="primary">Create Account</CButton>
+                    </Link>
                   </div>
                 </CForm>
               </CCardBody>

@@ -8,10 +8,11 @@
   box-shadow: 0 3px 2px -2px rgb(0 0 0 / 20%);
 
 }
-.nav-link{
+.simplebar-content .nav-link{
   width: 106px;
 }
-.nav-item{
+
+.simplebar-content .nav-item{
   margin-top: 10px;
 }
 .sidebar-nav .nav-link.active,  .sidebar-nav .nav-link.active .nav-icon{
@@ -34,8 +35,9 @@
 .sidebar-nav .nav-link {
   font-size: 12px;
   font-weight: bold;
+  
   svg{
-    height: 12px;
+    height: 36px;
     padding-left: 14px;
   }
 }
@@ -43,7 +45,7 @@
 .simplebar-content {
   margin-top: 16px;
   flex-flow: column;
-  height: 300px;
+  height: 245px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,14 +95,25 @@
   color: #fff !important;
 }
 
-.icon:not(.icon-c-s):not(.icon-custom-size){
-  width: 2rem;
-  height: 2rem;
+.sidebar-info .icon:not(.icon-c-s):not(.icon-custom-size) {
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: 5px;
-  padding-left: 2px !important;
+  padding: 4px !important;
 }
-
 
 .input-group-text svg{
   width: 1rem !important;
+}
+
+.sidebar-nav .nav-link.active:hover, .sidebar-nav .nav-link:hover .nav-icon,  .sidebar-nav .nav-link:hover{
+  color: #000 !important;
+}
+
+.simplebar-content svg{
+  width: auto !important;
+}
+
+.sidebar-nav .nav-icon{
+  flex: auto;
 }

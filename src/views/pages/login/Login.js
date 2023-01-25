@@ -46,8 +46,12 @@ const Login = () => {
                     </CInputGroup>
                     <CRow>
                       <CCol xs={6}>
-                        <Link to="/tech-info">
-                          <CButton color="primary" className="px-4">
+                        <Link to="/dashboardAdm">
+                          <CButton
+                            color="primary"
+                            className="px-4"
+                            onClick={() => localStorage.setItem('adm', true)}
+                          >
                             Login
                           </CButton>
                         </Link>
@@ -56,6 +60,15 @@ const Login = () => {
                         <CButton color="link" className="px-0">
                           Forgot password?
                         </CButton>
+                        <Link to="/dashboardAdm?guest">
+                          <CButton
+                            color="link"
+                            className="px-0"
+                            onClick={() => localStorage.setItem('adm', false)}
+                          >
+                            Enter as guest
+                          </CButton>
+                        </Link>
                       </CCol>
                     </CRow>
                   </CForm>

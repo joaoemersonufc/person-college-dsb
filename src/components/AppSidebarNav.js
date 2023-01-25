@@ -22,6 +22,9 @@ export const AppSidebarNav = ({ items }) => {
 
   const navItem = (item, index) => {
     const { component, name, badge, icon, ...rest } = item
+    if (localStorage.getItem('adm') !== 'true') {
+      if (name === 'TECH INFO') return
+    }
     const Component = component
     return (
       <Component
@@ -38,6 +41,9 @@ export const AppSidebarNav = ({ items }) => {
   }
   const navGroup = (item, index) => {
     const { component, name, icon, to, ...rest } = item
+    if (localStorage.getItem('adm') !== 'true') {
+      if (name === 'TECH INFO') return
+    }
     const Component = component
     return (
       <Component

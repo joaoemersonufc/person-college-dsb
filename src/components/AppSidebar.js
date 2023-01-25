@@ -1,4 +1,4 @@
-import { cilMediaPlay } from '@coreui/icons'
+import { cilAccountLogout, cilMediaPlay, cilNewspaper } from '@coreui/icons'
 import { CNavLink } from '@coreui/react'
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
@@ -39,16 +39,19 @@ const AppSidebar = () => {
         <SimpleBar>
           <AppSidebarNav items={navigation} />
         </SimpleBar>
-        <div style={{ background: '#fff', margin: 24, border: '1px solid #ddd' }}>
+        <div
+          className="sidebar-info"
+          style={{ background: '#fff', margin: 24, border: '1px solid #ddd' }}
+        >
           <div style={{ color: '#000', fontSize: 20, marginTop: 8, fontWeight: 'bold' }}>
             Information
           </div>
-          <div style={{ color: '#504f4f', fontSize: 16 }}>
+          <div style={{ color: '#504f4f', fontSize: 16, padding: 5 }}>
             Watch our short videos to find out how you can help.
           </div>
           <div
             style={{
-              padding: 5,
+              padding: 2,
               display: 'flex',
               flexFlow: 'column',
               marginTop: 8,
@@ -63,6 +66,18 @@ const AppSidebar = () => {
               />
               Maybe something
             </CNavLink>
+            <CNavLink
+              href="https://www.ucsusa.org/resources/cars-trucks-buses-and-air-pollution"
+              target="_blank"
+              active
+            >
+              <CIcon
+                icon={cilNewspaper}
+                className="me-2"
+                style={{ border: '1px solid #000', display: 'flex' }}
+              />
+              Road pollution
+            </CNavLink>
             <CNavLink href="https://www.youtube.com/watch?v=yx1edbQBDOs" target="_blank" active>
               <CIcon
                 icon={cilMediaPlay}
@@ -70,6 +85,14 @@ const AppSidebar = () => {
                 style={{ border: '1px solid #000', display: 'flex' }}
               />
               Air pollution info
+            </CNavLink>
+            <CNavLink href="/login" active onClick={() => localStorage.setItem('adm', false)}>
+              <CIcon
+                icon={cilAccountLogout}
+                className="me-2"
+                style={{ border: '1px solid #000', display: 'flex' }}
+              />
+              Logout
             </CNavLink>
           </div>
         </div>
