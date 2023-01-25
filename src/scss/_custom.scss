@@ -8,8 +8,8 @@
   box-shadow: 0 3px 2px -2px rgb(0 0 0 / 20%);
 
 }
-.simplebar-content .nav-link{
-  width: 106px;
+.simplebar-content .nav-link, .simplebar-content .nav-link.active{
+  width: 106px !important;
 }
 
 .simplebar-content .nav-item{
@@ -17,7 +17,7 @@
 }
 .sidebar-nav .nav-link.active,  .sidebar-nav .nav-link.active .nav-icon{
   color: #E89028;
-  width: auto !important;
+  width: auto;
 }
 .sidebar-nav .nav-link,  .sidebar-nav .nav-link .nav-icon{
   color: #E89028; 

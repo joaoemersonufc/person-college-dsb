@@ -7,7 +7,7 @@ const _nav = [
   {
     component: CNavItem,
     name: 'TECH INFO',
-    to: '/login',
+    to: '/dashboardAdm',
     icon: <CIcon icon={cilTablet} customClassName="nav-icon" />,
     badge: {
       color: 'info',
