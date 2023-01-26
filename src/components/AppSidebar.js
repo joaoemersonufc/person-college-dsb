@@ -62,9 +62,9 @@ const AppSidebar = () => {
               <CIcon
                 icon={cilMediaPlay}
                 className="me-2"
-                style={{ border: '1px solid #000', display: 'flex' }}
+                style={{ border: '1px solid #FF0000', display: 'flex' }}
               />
-              Maybe something
+              Dont click HERE!!!
             </CNavLink>
             <CNavLink
               href="https://www.ucsusa.org/resources/cars-trucks-buses-and-air-pollution"
